@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramesha's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .landing-text h2, .landing-text p, .landing-text a {
+            animation: slideIn 2s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Style the contact section */
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-info p {
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+        }
+
+        .map-container {
+            flex: 1;
+            min-width: 300px;
+            height: 300px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Style the skills section */
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills-list li {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .skills-list li i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="fade-in">
+        <h1>Ramesha</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="landing">
+        <div class="landing-text">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Frontend Developer | UI/UX Designer</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am Rameesha, a frontend developer with experience in HTML, CSS, jQuery, Bootstrap, Figma, and Canva. I am currently pursuing a web development course at Saylani and Aptech Garden Center.</p>
+        <h3>Skills</h3>
+        <ul class="skills-list">
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fas fa-code"></i> jQuery</li>
+            <li><i class="fas fa-code-branch"></i> Bootstrap</li>
+            <li><i class="fas fa-palette"></i> Figma</li>
+            <li><i class="fas fa-image"></i> Canva</li>
+            <li><i class="fas fa-paint-brush"></i> UI/UX</li>
+        </ul>
+        <h3>Education</h3>
+        <p>Undergraduate in Arts at SMB Fatima Jinnah<br>
+        Web Development courses at Saylani and Aptech Garden Center</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="img/dental project.PNG" alt="Project 1">
+            <p><strong>Project 1:</strong> Developed in collaboration with a team. </p>
+        </div>
+        <div class="project">
+            <img src="img/food website.PNG" alt="Project 2">
+            <p><strong>Project 2:</strong> Developed independently.
+                 <!-- <a href="#">View Project</a> -->
+                </p>
+        </div>
+        <div class="project">
+            <img src="img/beaches website.PNG" alt="Project 3">
+            <p><strong>Project 3:</strong> Developed in collaboration with a team. 
+        </div>
+        <div class="project">
+            <img src="img/fit website.PNG" alt="Project 4">
+            <p><strong>Project 4:</strong> Developed independently.
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/ramesha56">Ramesha56 </a> /
+                    <a href="https://github.com/ramesha563"> Ramesha563</a>  </p>
+                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/ramesha-waseem-ul-haq-65b1a6256/">Ramesha-waseem-ul-haq</a></p>
+                <p><i class="fas fa-envelope"></i> Email: ramesha2203e@gmail.com</p>
+                <p><i class="fas fa-phone"></i> Phone: 03442206384</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.902683879676!2d67.06488381500035!3d24.861462084054777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f906264d36d%3A0xa8e69f7e95a7d5c5!2sSaylani%20Welfare%20International%20Trust!5e0!3m2!1sen!2s!4v1627880372561!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rameesha. All rights reserved.</p>
+    </footer>
+</body>
+</html>
